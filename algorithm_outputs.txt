@@ -1,0 +1,92 @@
+================================================================================
+RSÜ (Rastgele Sayı Üreteci) ALGORİTMASI ÇIKTILARI
+================================================================================
+Üretim Tarihi: 2025-12-31 15:16:36
+
+--------------------------------------------------------------------------------
+TEST 1: Farklı Anahtarlarla 10 Bayt Üretimi
+--------------------------------------------------------------------------------
+
+Anahtar: 'anahtar1'
+Üretilen Baytlar (hex): b289f33eb05712cbd2e1
+Üretilen Baytlar (decimal): [178, 137, 243, 62, 176, 87, 18, 203, 210, 225]
+
+Anahtar: 'anahtar2'
+Üretilen Baytlar (hex): 261f80a5d1f001ebed45
+Üretilen Baytlar (decimal): [38, 31, 128, 165, 209, 240, 1, 235, 237, 69]
+
+Anahtar: 'test123'
+Üretilen Baytlar (hex): 47a1842c14b7ef582fde
+Üretilen Baytlar (decimal): [71, 161, 132, 44, 20, 183, 239, 88, 47, 222]
+
+Anahtar: 'farkli_anahtar'
+Üretilen Baytlar (hex): 909629d8d842ba05725f
+Üretilen Baytlar (decimal): [144, 150, 41, 216, 216, 66, 186, 5, 114, 95]
+
+--------------------------------------------------------------------------------
+TEST 2: Büyük Örnek ile Bit Dağılımı Analizi (10,000 bayt)
+--------------------------------------------------------------------------------
+
+Anahtar: 'istatistiksel_test_anahtari'
+Toplam Bit: 80,000
+Birler: 40,115 (50.1437%)
+Sıfırlar: 39,885 (49.8563%)
+0-1 Eşitliği Sapması: 0.001437
+
+--------------------------------------------------------------------------------
+TEST 3: Şifreleme ve Çözme Örneği
+--------------------------------------------------------------------------------
+
+Orijinal Mesaj: 'Merhaba Dünya!'
+Şifreli (hex): 5759ab2d730b3233bd473e62ebfb06
+Çözülen Mesaj: 'Merhaba Dünya!'
+Doğruluk: BASARILI
+
+Orijinal Mesaj: 'RSÜ algoritması test mesajı.'
+Şifreli (hex): 486f1ad932083f7496f6eb78fffb545169ece185c5ec3ac4d7d30bfa5586fb
+Çözülen Mesaj: 'RSÜ algoritması test mesajı.'
+Doğruluk: BASARILI
+
+Orijinal Mesaj: '1234567890'
+Şifreli (hex): 2b0eea71275f642bc0b4
+Çözülen Mesaj: '1234567890'
+Doğruluk: BASARILI
+
+Orijinal Mesaj: 'Özel karakterler: ğüşıöç ĞÜŞİÖÇ'
+Şifreli (hex): d9aaa3207e4938728be5e978f7e84bf0aaf6b524295ba66c2d64db5327f47294923bba4bee072c98acc1b84f
+Çözülen Mesaj: 'Özel karakterler: ğüşıöç ĞÜŞİÖÇ'
+Doğruluk: BASARILI
+
+--------------------------------------------------------------------------------
+TEST 4: Deterministiklik Testi
+--------------------------------------------------------------------------------
+
+Anahtar: 'deterministik_test'
+İlk Çalıştırma (hex): 0064ed68cac3e96e0e71a2a7f93e01a5b4bf9b46
+İkinci Çalıştırma (hex): 0064ed68cac3e96e0e71a2a7f93e01a5b4bf9b46
+Aynı Çıktı: EVET (Deterministik)
+
+--------------------------------------------------------------------------------
+TEST 5: Farklı Anahtarlar ile Farklı Çıktılar
+--------------------------------------------------------------------------------
+
+Anahtar 'key1': ad20737307dfd7983d11
+
+Anahtar 'key2': 06872060ba0977746d33
+
+Anahtar 'key3': 120cbe56f8b2110a2110
+
+--------------------------------------------------------------------------------
+TEST 6: İstatistiksel Analiz Örneği (100 bayt)
+--------------------------------------------------------------------------------
+
+Anahtar: 'istatistik_ornek'
+Üretilen Bayt Sayısı: 100
+Benzersiz Bayt Değerleri: 80
+En Az Görülen Bayt: (145, 1)
+En Çok Görülen Bayt: (186, 3)
+Ortalama Frekans: 1.25
+
+================================================================================
+ÇIKTI ÜRETİMİ TAMAMLANDI
+================================================================================
